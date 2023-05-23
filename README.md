@@ -9,9 +9,9 @@ Antes de comenzar, asegúrate de tener instalado Node.js y expo en tu sistema. L
    git clone https://github.com/osancho/Ejercicio3.git
     ```
 2. Abre una terminal en el directorio raíz del proyecto.
-```bash
-cd Ejercicio3
-```
+    ```bash
+    cd Ejercicio3
+    ```
 3. Ejecuta el siguiente comando para instalar las dependencias del proyecto:
 
    ```bash
