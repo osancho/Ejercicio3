@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { Classification } from './src/pages/Classification';
 import { Team } from './src/pages/Team';
+import { ThemeProvider } from './src/context/ThemeContext';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -12,10 +13,12 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="classification" component={Classification} />
-        <Stack.Screen name="team" component={Team} />
-      </Stack.Navigator>
+      <ThemeProvider>
+        <Stack.Navigator>
+          <Stack.Screen name="classification" component={Classification} />
+          <Stack.Screen name="team" component={Team} />
+        </Stack.Navigator>
+      </ThemeProvider>
     </NavigationContainer>
   );
 }
