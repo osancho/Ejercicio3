@@ -3,10 +3,10 @@ import { Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 export const TeamListItem = ({ team }) => {
-//   const navigation = useNavigation();
+  const navigation = useNavigation();
 
   const handleOnClick = () => {
-    // navigation.navigate('Team', { team });
+    navigation.navigate('team', { team });
   };
 
   return (

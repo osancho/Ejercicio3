@@ -1,15 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { useFetchTeams } from './src/hooks/useFetchTeams';
+import { StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import { Classification } from './src/pages/Classification';
+import { Team } from './src/pages/Team';
+
+import { createStackNavigator } from '@react-navigation/stack';
+
+import 'react-native-gesture-handler';
+
+const Stack = createStackNavigator();
 
 export default function App() {
-  const { teams, loading, error } = useFetchTeams()
-  console.log(teams)
   return (
-    <View style={styles.container}>
-      <Classification />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="classification" component={Classification} />
+        <Stack.Screen name="team" component={Team} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
