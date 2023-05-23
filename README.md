@@ -20,8 +20,8 @@ Antes de comenzar, asegúrate de tener instalado Node.js y expo en tu sistema. L
 ## Ejecución
 Puedes ejecutar la aplicación en diferentes plataformas el siguiente comando:
 
-```bash
-expo start
-```
+    ```bash
+    expo start
+    ```
 
 Aquí puedes seleccionar la plataforma en la que quieras ejecutar su aplicación
